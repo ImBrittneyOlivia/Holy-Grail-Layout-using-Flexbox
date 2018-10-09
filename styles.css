@@ -1,0 +1,46 @@
+* {
+  margin: 2px; /*separate the sections of our web page.*/
+}
+body {
+  font-size: 24px;
+  color: white;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column; /* want sections to flow from top to bottom*/
+}
+.flex-header {
+  background-color: #5070b5;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+.flex-main {
+  display: flex;
+  flex: 1; /*takes up the vertical space*/
+}
+.flex-nav {
+  background-color: rgb(230, 148, 162);
+  padding-top: 3rem;
+  flex: 1 1 5rem; /*takes up the horizontal space*/
+}
+.flex-article {
+  background-color: greenyellow;
+  padding-top: 3rem;
+  flex: 3 3;
+}
+.flex-aside {
+  background-color: rgb(230, 148, 162);
+  padding-top: 3rem;
+  flex: 1 1 5rem; /*takes up the horizontal space*/
+}
+.flex-footer {
+  background-color: rgb(115, 160, 245);
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+@media all and (max-width: 540px) {
+  .flex-main {
+    flex-direction: column;
+  }
+}
